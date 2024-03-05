@@ -943,7 +943,7 @@ esac
 	|| "$isJsl" = true || "$isTgl" = true || "$isAdl" = true \
 	|| "$isCzn" = true || "$isMdn" = true || "$isAdlN" = true ]] && hasCR50=true
 [[ "$device" = "rammus" || "$isGlk" = true ]] && useAltfwStd=true
-[[ "${eol_devices[@]}" =~ "$device" ]] && isEOL=true || isEOL=false
+[[ "${eol_devices[@]}" =~ "$device" ]] && isEOL=false || isEOL=false
 
 # set unsupported if the script fails to identify the platform
 # force all menu options disabled
